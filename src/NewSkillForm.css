@@ -7,8 +7,8 @@
     font-weight: bold;
     color: teal;
     text-align: left;
-    border: 0.2rem solid coral;
-    border-radius: 0.3rem;
+    border: 0.2rem solid rgb(255, 255, 102);
+    border-radius: 25px;
     padding: 1rem;
   }
   
@@ -18,9 +18,10 @@
     font-weight: bold;
     color: teal;
     padding: 0.2rem;
-    border: 0.2rem solid coral;
+    border: 0.2rem solid rgb(255, 255, 102);
     border-radius: 0.3rem;
     outline: none;
+    border-radius: 25px;
   }
   
   .NewSkillForm > button {
@@ -34,21 +35,11 @@
     border-radius: 0.3rem;
   }
 
-  .FormWrapper {
-    border: 3px solid rgb(255, 255, 102);
-    border-radius: 25px;
-    width: 37vmin;
-    height: 30vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
   form {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .AddSkill {
-    background-color: teal;
+    background-color: rgb(218, 220, 84);
   }

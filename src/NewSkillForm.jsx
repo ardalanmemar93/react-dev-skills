@@ -4,13 +4,11 @@ import "./NewSkillForm.css";
 export default function NewSkillForm() {
   return (
     <div className="FormWrapper">
-    <form>
+    <form className="NewSkillForm">
       
       <label htmlFor="skill">Skill: </label>
       <input type="text" id="skill" name="skill" placeholder="Enter your skill" />
-
-      <br />
-
+      
       <label htmlFor="level">Level: </label>
       <select id="level" name="level">
         <option value="noob">Noob</option>
