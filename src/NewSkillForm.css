@@ -49,3 +49,6 @@
     flex-direction: column;
     justify-content: center;
   }
+  .AddSkill {
+    background-color: teal;
+  }

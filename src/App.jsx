@@ -17,7 +17,9 @@ function App() {
     <>
       <h1>My Dev Skills</h1>
       <SkillList skills={skills}/>
+      <br />
       <hr />
+      <br />
       {/* Add NewSkillListForm */}
       <NewSkillForm />
     </>

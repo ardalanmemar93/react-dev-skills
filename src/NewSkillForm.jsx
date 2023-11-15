@@ -22,7 +22,7 @@ export default function NewSkillForm() {
 
       <br />
 
-      <button type="submit">ADD SKILL</button>
+      <button type="submit" className="AddSkill">ADD SKILL</button>
       
     </form>
     </div>
