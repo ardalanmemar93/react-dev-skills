@@ -1,0 +1,56 @@
+.SkillListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.2rem 0.6rem;
+    border: 0.2rem solid rgb(255, 255, 102);
+    border-radius: 0.3rem;
+    list-style: none;
+    color: teal;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .SkillListItem > .level {
+    margin-left: 5rem;
+    padding: 0.3rem 0.8rem;
+    color: white;
+    background-color: teal;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+
+  .SkillListItem div {
+    width: 3vmin;
+    height: 3vmin;
+    margin-right: 0 auto;
+    background-color: #006A4E;
+    color: white;
+    border-radius: 50%;
+  }
+ 
+  
+  .flex-ctr-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    color:rgb(255, 255, 102);
+  }
+
+  .LevelSpan {
+    color: #7CB9E8;
+    background-color: #006A4E;
+    border-radius: 25px;
+    width: 10vmin;
+  }
+  .NameSpan {
+    color: #7CB9E8;
+    background-color: #006A4E;
+    border-radius: 25px;
+    width: 10vmin;
+  }
