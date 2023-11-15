@@ -1,8 +1,11 @@
 import React from 'react';
+import "./NewSkillForm.css";
 
 export default function NewSkillForm() {
   return (
+    <div className="FormWrapper">
     <form>
+      
       <label htmlFor="skill">Skill: </label>
       <input type="text" id="skill" name="skill" placeholder="Enter your skill" />
 
@@ -20,6 +23,8 @@ export default function NewSkillForm() {
       <br />
 
       <button type="submit">ADD SKILL</button>
+      
     </form>
+    </div>
   );
 }

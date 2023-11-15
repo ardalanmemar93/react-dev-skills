@@ -33,3 +33,19 @@
     border: 0.2rem solid teal;
     border-radius: 0.3rem;
   }
+
+  .FormWrapper {
+    border: 3px solid rgb(255, 255, 102);
+    border-radius: 25px;
+    width: 37vmin;
+    height: 30vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
