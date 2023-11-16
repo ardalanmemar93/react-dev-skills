@@ -43,3 +43,17 @@
   .AddSkill {
     background-color: rgb(218, 220, 84);
   }
+
+
+  form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+    width: 20rem;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .skill, .level {
+    color: white;
+  }
