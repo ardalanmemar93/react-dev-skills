@@ -5,15 +5,19 @@ import { useState } from 'react'
 
 
 const initialSkills = [
-  { name: "HTML", level: 5 },
-  { name: "CSS", level: 3 },
-  { name: "JavaScript", level: 4 },
-  { name: "Python", level: 2 },
+  { skill: "CSS", level: 3 },
+  { skill: "HTML", level: 5 },
+  { skill: "JS", level: 4 },
+  { skill: "Python", level: 2 },
 ];
 
 function App() {
   const [skills, setSkills] = useState(initialSkills)
   const [showSkills, setShowSkills] = useState(true)
+
+  function addSkill(skill) {
+    setSkills([...skills, skill])
+  }
 
   return (
     <>
@@ -23,9 +27,13 @@ function App() {
       <hr />
       <br />
       {/* Add NewSkillListForm */}
-      <NewSkillForm />
+      <NewSkillForm addSkill={addSkill}/>
     </>
   )
 }
 
 export default App
+
+
+
+

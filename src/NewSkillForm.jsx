@@ -1,43 +1,62 @@
-import React from 'react';
-import { useState } from 'react';
-import "./NewSkillForm.css";
+import React, { useState } from 'react';
+import './NewSkillForm.css';
 
+const defaultFormData = { skill: '', level: '1' };
 
-export default function NewSkillForm() {
-  const [formData, setFormData] = useState({
-    skill: "",
-    level: "noob",
-  });
+export default function NewSkillForm({ addSkill }) {
+  const [formData, setFormData] = useState(defaultFormData);
 
-  function handleChange(evt) {
-    const newFormData = {...formData, [ evt.target.name] : evt.target.value}
-    setFormData(newFormData)
+  function handleChange(event) {
+    const newFormData = { ...formData, [event.target.name]: event.target.value};
+    setFormData(newFormData);
+  }
+
+  function handleAddSkill(event) {
+    event.preventDefault();
+    addSkill(formData);
+    setFormData(defaultFormData);
   }
 
   return (
     <div className="FormWrapper">
-    <form className="NewSkillForm">
-      
-      <label htmlFor="skill" className="skill">Skill: </label>
-      <input value={formData.skill} onChange={handleChange}
-      type="text" id="skill" name="skill" placeholder="Enter your skill" />
-      
-      <label htmlFor="level" className="level">Level: </label>
-      <select value={formData.level} onChange={handleChange}
-      id="level" name="level">
-        <option value="noob">Noob</option>
-        <option value="intermediate">Intermediate</option>
-        <option value="advanced">Advanced</option>
-        <option value="advanced">God</option>
-        <option value="advanced">Demon</option>
-      </select>
+      <form
+        className="NewSkillForm"
+        onSubmit={handleAddSkill}
+      >
+        <label className="skill">
+          Skill:{' '}
+        </label>
+        <input
+          value={formData.skill}
+          onChange={handleChange}
+          type="text"
+          id="skill"
+          name="skill"
+          placeholder="Enter your skill"
+        />
 
-      <br />
+        <label className="level">
+          Level:{' '}
+        </label>
+        <select
+          value={formData.level}
+          onChange={handleChange}
+          id="level"
+          name="level"
+        >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
 
-      <button type="submit" className="AddSkill">ADD SKILL</button>
-      
-    </form>
-    <h2>{formData.skill} is {formData.level}</h2>
+        <br />
+
+        <button type="submit" className="AddSkill">
+          ADD SKILL
+        </button>
+      </form>
     </div>
   );
 }
